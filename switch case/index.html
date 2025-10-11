@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Day Switch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* fade animation */
+      .fade {
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out;
+      }
+      .show {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <html>
+    <body
+      class="flex items-center justify-center h-screen bg-gradient-to-br from-blue-700 via-purple-600 to-indigo-900 text-white"
+    >
+      <div class="text-center">
+        <h1 class="text-4xl font-bold mb-4">🌞 JavaScript Switch Case</h1>
+        <h2 class="text-xl mb-8">Dynamic Day Changer (Every 2 Seconds)</h2>
+
+        <!-- Day Display -->
+        <div id="demo" class="text-6xl font-extrabold fade">Loading...</div>
+
+        <p class="mt-8 text-gray-300 text-sm">
+          Auto changes every 2 seconds ⏳
+        </p>
+      </div>
+
+      <script src="switch.js"></script>
+    </body>
+  </html>
+</html>
