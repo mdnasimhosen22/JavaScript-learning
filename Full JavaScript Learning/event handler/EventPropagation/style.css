@@ -1,0 +1,68 @@
+/* পুরো পেজের ব্যাকগ্রাউন্ড ডার্ক করার জন্য (ঐচ্ছিক) */
+body {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+/* পুরো কন্টেন্টকে একসাথে রাখার জন্য */
+.main-wrapper {
+  width: 550px; /* আপনার প্রয়োজনমতো কমাতে বা বাড়াতে পারেন */
+}
+
+/* হেডিং স্টাইল */
+.main-title {
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+/* হেডিংয়ের নিচের দাগ (Horizontal Line) */
+.divider {
+  border: none;
+  border-top: 1px solid #444;
+  margin-bottom: 25px;
+}
+/* প্রথম বা বাইরের div (বেগুনি বর্ডার) */
+.outer-container {
+  border: 2px solid #5d2b91; /* Purple border */
+  border-radius: 8px;
+  padding: 25px;
+  width: 500px; /* আপনার প্রয়োজনমতো পরিবর্তন করতে পারেন */
+  background-color: #1e1e1e;
+}
+
+/* ভেতরের form (সবুজ বর্ডার) */
+.inner-form {
+  border: 2px solid #0f631a; /* Green border */
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* ভেতরের button (হালকা ক্রিম কালার ব্যাকগ্রাউন্ড ও শ্যাডো) */
+.click-btn {
+  background-color: #f7ede2; /* Light cream background */
+  color: #1a1a1a;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0px 4px 0px #000; /* বাটনটির নিচের কালো শ্যাডো */
+  transition:
+    transform 0.1s,
+    box-shadow 0.1s;
+}
+
+/* বাটনে ক্লিক করলে সামান্য নিচে নামার ইফেক্ট */
+.click-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0px 2px 0px #000;
+}
