@@ -36,6 +36,7 @@ scaryStoryBtn.addEventListener("click", () => {
 funnyStoryBtn.addEventListener("click", () => {
   displayStory("funny");
 });
+
 adventureStoryBtn.addEventListener("click", () => {
   displayStory("adventure");
 });
